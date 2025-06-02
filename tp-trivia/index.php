@@ -22,7 +22,7 @@ $resultados = [];
 foreach ($respuestas_correctas as $clave => $respuesta_correcta) {
     $respuesta_usuario = $_POST[$clave] ?? null;
 
-    if ($respuesta_usuario === $respuesta_correcta) {
+    if ($respuesta_usuario == $respuesta_correcta) {
         $puntaje += 10;
         $resultados[$clave] = " Correcta";
     } else {
